@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Rafli Ahmad Wahidin (2512501269)</title>
+
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bs-body-font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            --primary-navy: #0f172a;
+            --accent-blue: #2563eb;
+        }
+
+        body {
+            font-family: var(--bs-body-font-family);
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            color: #334155;
+            min-height: 100vh;
+        }
+
+        .cv-wrapper {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.12), 0 0 1px 1px rgba(15, 23, 42, 0.05);
+            overflow: hidden;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+            position: relative;
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 90% 10%, rgba(255,255,255,0.15), transparent 40%);
+            pointer-events: none;
+        }
+
+        .profile-img {
+            width: 155px;
+            height: 205px;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            border-radius: 14px;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.03) rotate(0.5deg);
+        }
+
+        .section-title {
+            position: relative;
+            font-weight: 700;
+            color: #0f172a;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3.5px;
+            width: 48px;
+            background: #2563eb;
+            border-radius: 3px;
+        }
+
+        .card-custom {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            transition: all 0.25s ease;
+            background-color: #ffffff;
+        }
+
+        .card-custom:hover {
+            border-color: #93c5fd;
+            box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .social-pill {
+            transition: all 0.25s ease;
+            text-decoration: none;
+        }
+
+        .social-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .table-custom thead th {
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+
+<body class="py-4 py-lg-5">
+
+    <div class="container my-2">
+        <div class="cv-wrapper">
+
+            <header class="hero-banner text-white p-4 p-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-8 col-lg-8 order-2 order-md-1">
+                        <span class="badge bg-light text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
+                            <i class="bi bi-briefcase-fill me-1"></i> Siap Magang / Internship
+                        </span>
+                        
+                        <h1 class="display-6 fw-bold mb-1 text-white">RAFLI AHMAD WAHIDIN</h1>
+                        <p class="fs-5 opacity-90 mb-3 fw-medium text-info-emphasis">Mahasiswa Sistem Informasi &bull; Calon Web Developer</p>
+
+                        <div class="row g-2 mb-4 text-light small opacity-90">
+                            <div class="col-sm-6">
+                                <i class="bi bi-building me-1"></i> <strong>Institusi:</strong> Universitas Budi Luhur
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="bi bi-geo-alt-fill me-1"></i> <strong>Domisili:</strong> Jakarta, Indonesia
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="bi bi-envelope-fill me-1"></i> <strong>Email:</strong> rafliwahidin@gmail.com
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="bi bi-card-text me-1"></i> <strong>NIM:</strong> 2512501269
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-2 pt-1">
+                            <a href="https://www.linkedin.com/in/rafli-ahmad-wahidin-7149461a0/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-light btn-sm rounded-pill fw-semibold px-3 text-primary social-pill shadow-sm"
+                               title="Buka Profil LinkedIn Rafli Ahmad Wahidin">
+                                <i class="bi bi-linkedin text-primary me-1"></i> LinkedIn
+                            </a>
+
+                            <a href="https://github.com/bluplyy" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-dark btn-sm rounded-pill fw-semibold px-3 social-pill shadow-sm"
+                               title="Buka Repositori GitHub bluplyy">
+                                <i class="bi bi-github me-1"></i> GitHub: @bluplyy
+                            </a>
+
+                            <a href="https://www.instagram.com/raflhd/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-danger btn-sm rounded-pill fw-semibold px-3 social-pill shadow-sm"
+                               style="background-color: #e1306c; border-color: #e1306c;"
+                               title="Buka Profil Instagram @raflhd">
+                                <i class="bi bi-instagram me-1"></i> Instagram: @raflhd
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 text-center text-md-end order-1 order-md-2">
+                        <img src="foto_profil.jpg" 
+                             alt="Foto Resmi Rafli Ahmad Wahidin" 
+                             class="profile-img img-fluid"
+                             width="155" 
+                             height="205">
+                    </div>
+                </div>
+            </header>
+
+            <main class="p-4 p-md-5">
+
+                <section class="mb-5">
+                    <h2 class="h4 section-title">Ringkasan Profesional</h2>
+                    <p class="text-secondary lead fs-6 lh-base mb-0 text-break" style="text-align: justify;">
+                        Saya adalah mahasiswa program studi Sistem Informasi di Universitas Budi Luhur yang berdedikasi, teliti,
+                        dan memiliki minat mendalam di bidang <strong>Web Development</strong> dan UI/UX Design. Terbiasa memecahkan
+                        masalah komputasi secara logis dan menyukai eksplorasi teknologi baru. Memiliki pemahaman yang solid
+                        mengenai fondasi web standar (HTML5, manipulasi form dan tabel, CSS layouting, Bootstrap framework, dan logika pemrograman).
+                        Siap berkontribusi secara produktif, cepat beradaptasi dengan alur kerja tim, serta bersemangat untuk
+                        berkembang dalam kesempatan magang (internship) maupun proyek profesional bersama perusahaan Anda.
+                    </p>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="h4 section-title">Riwayat Pendidikan Formal</h2>
+                    <div class="card card-custom p-3 p-md-4 bg-light border-0 shadow-sm">
+                        <ol type="1" class="ps-3 mb-0 text-secondary">
+                            <li class="mb-3">
+                                <span class="fw-bold text-dark fs-6">Universitas Budi Luhur</span> 
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle ms-2">2025 - Sekarang</span><br>
+                                <span class="text-body-secondary">S1 - Fakultas Teknologi Informasi (Sistem Informasi) &bull; IPK Sementara: <strong>3.67 / 4.00</strong></span><br>
+                                <small class="text-muted"><i class="bi bi-check-circle-fill text-success me-1"></i>Fokus: Pemrograman Web, Struktur Data, UI/UX Design, dan Basis Data.</small>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fw-bold text-dark fs-6">Sekolah Madrasah Aliyah</span>
+                                <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle ms-2">2022 - 2025</span><br>
+                                <span class="text-body-secondary">Jurusan Ilmu Pengetahuan Sosial (IPS)</span>
+                            </li>
+                            <li class="mb-0">
+                                <span class="fw-bold text-dark fs-6">Sekolah Menengah Pertama</span>
+                                <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle ms-2">2019 - 2022</span><br>
+                                <span class="text-body-secondary">Pendidikan Dasar Tingkat Menengah Pertama</span>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="h4 section-title">Keahlian & Kompetensi</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card card-custom h-100 p-4">
+                                <h3 class="h5 text-primary fw-bold mb-3 d-flex align-items-center">
+                                    <i class="bi bi-code-slash me-2 fs-4"></i> 1. Hard Skills (Teknis)
+                                </h3>
+                                <ul type="disc" class="ps-3 mb-0 text-secondary">
+                                    <li class="mb-2">
+                                        <strong class="text-dark">HTML5 & Semantik Web:</strong> Pembuatan struktur halaman yang rapi, accessible, dan valid standar W3C.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong class="text-dark">CSS3 & Bootstrap 5:</strong> Responsive design, box model, utilities, layout grid, flexbox, dan modern components.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong class="text-dark">Form & Data Input:</strong> Validasi data sisi klien, pengelompokan fieldset, dan input controls interaktif.
+                                    </li>
+                                    <li class="mb-0">
+                                        <strong class="text-dark">Tools Pengembangan:</strong> Visual Studio Code, Git, GitHub, XAMPP (Apache & MySQL).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card card-custom h-100 p-4">
+                                <h3 class="h5 text-primary fw-bold mb-3 d-flex align-items-center">
+                                    <i class="bi bi-people-fill me-2 fs-4"></i> 2. Soft Skills (Interpersonal)
+                                </h3>
+                                <ul type="square" class="ps-3 mb-0 text-secondary">
+                                    <li class="mb-2">
+                                        <strong class="text-dark">Problem Solving:</strong> Mampu menganalisis masalah teknis dan menemukan solusi secara sistematis.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong class="text-dark">Kerja Sama Tim (Teamwork):</strong> Mampu berkolaborasi aktif dan berkomunikasi dengan baik antar anggota tim.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong class="text-dark">Kemauan Belajar Tinggi:</strong> Senang mempelajari framework, pustaka kode baru, serta praktik terbaik industri.
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong class="text-dark">Manajemen Waktu:</strong> Berdisiplin terhadap tenggat waktu (deadline) tugas maupun proyek.
+                                    </li>
+                                    <li class="mb-0">
+                                        <strong class="text-dark">Ketelitian:</strong> Memperhatikan detail sintaks kode dan kesesuaian tampilan antarmuka.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-4">
+                    <h2 class="h4 section-title">Portofolio Proyek & Pengalaman Terkait</h2>
+                    <p class="text-secondary mb-3">Berikut adalah ringkasan proyek yang pernah saya kerjakan dan hasil evaluasi kompetensi:</p>
+
+                    <div class="table-responsive shadow-sm rounded-3">
+                        <table class="table table-bordered table-hover align-middle mb-0 table-custom" 
+                               border="1" 
+                               cellpadding="8" 
+                               cellspacing="0" 
+                               width="100%" 
+                               align="center">
+                            
+                            <caption class="text-primary fw-bold px-3 py-2 bg-light border-bottom">
+                                <i class="bi bi-table me-1"></i> Tabel 1.1: Rekapitulasi Portofolio Proyek Pengembangan Web Mahasiswa
+                            </caption>
+
+                            <thead>
+                                <tr bgcolor="#1e3a8a" class="table-primary text-center align-middle" style="background-color: #1e3a8a; color: #ffffff;">
+                                    <th rowspan="2" width="6%" class="text-white py-3">No</th>
+                                    <th rowspan="2" width="26%" class="text-white py-3">Nama Proyek</th>
+                                    <th colspan="2" class="text-white py-2">Spesifikasi Proyek</th>
+                                    <th rowspan="2" width="16%" class="text-white py-3">Status</th>
+                                </tr>
+                                <tr bgcolor="#2563eb" class="text-center" style="background-color: #2563eb; color: #ffffff;">
+                                    <th width="26%" class="text-white py-2">Teknologi</th>
+                                    <th width="26%" class="text-white py-2">Peran & Tanggung Jawab</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr align="center">
+                                    <td class="fw-semibold">1</td>
+                                    <td align="left">
+                                        <div class="fw-bold text-dark">Simple Ping Pong Game</div>
+                                        <small class="text-muted">Game Interaktif 2D Web</small>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-secondary-subtle text-secondary border me-1">HTML5</span>
+                                        <span class="badge bg-secondary-subtle text-secondary border me-1">JavaScript Canvas</span>
+                                        <span class="badge bg-secondary-subtle text-secondary border">CSS</span>
+                                    </td>
+                                    <td align="left" class="small">
+                                        Merancang gameplay, logika pantulan bola, sistem kalkulasi skor real-time, serta deteksi benturan (collision).
+                                    </td>
+                                    <td bgcolor="#dcfce7" style="background-color: #dcfce7;">
+                                        <span class="badge bg-success px-3 py-2 rounded-pill">
+                                            <i class="bi bi-check2-circle me-1"></i> Selesai
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr align="center">
+                                    <td class="fw-semibold">2</td>
+                                    <td align="left">
+                                        <div class="fw-bold text-dark">Online Portfolio & CV Web</div>
+                                        <small class="text-muted">Web Resume Responsif</small>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-primary-subtle text-primary border me-1">HTML5</span>
+                                        <span class="badge bg-primary-subtle text-primary border me-1">Bootstrap 5</span>
+                                        <span class="badge bg-primary-subtle text-primary border">CSS3</span>
+                                    </td>
+                                    <td align="left" class="small">
+                                        Membuat halaman CV terstruktur dan modern dengan Bootstrap 5, tabel termodifikasi atribut, ordered/unordered list, dan tata letak responsif.
+                                    </td>
+                                    <td bgcolor="#dcfce7" style="background-color: #dcfce7;">
+                                        <span class="badge bg-success px-3 py-2 rounded-pill">
+                                            <i class="bi bi-check2-circle me-1"></i> Selesai
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr bgcolor="#f8fafc" class="table-light">
+                                    <td colspan="4" align="right" class="pe-3 fw-bold text-dark">
+                                        Total Proyek Selesai:
+                                    </td>
+                                    <td align="center" class="fw-bold text-primary">
+                                        <span class="badge bg-primary px-3 py-2 rounded-pill">2 Proyek Aktif</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="mt-4 p-4 rounded-4 text-center bg-light border border-light-subtle">
+                    <h3 class="h5 fw-bold text-dark mb-2">Tertarik Bekerja Sama atau Ingin Menjadwalkan Sesi Wawancara?</h3>
+                    <p class="text-secondary small mb-3">Saya siap untuk mendiskusikan bagaimana kualifikasi saya dapat memberikan nilai tambah bagi tim Anda.</p>
+                    <a href="mailto:rafliwahidin@gmail.com" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                        <i class="bi bi-envelope-paper-fill me-2"></i> Hubungi via Email (rafliwahidin@gmail.com)
+                    </a>
+                </section>
+
+            </main>
+
+            <footer class="bg-dark text-white text-center py-4 px-3 border-top">
+                <div class="small opacity-75">
+                    &copy; 2026 <strong>Rafli Ahmad Wahidin</strong> &bull; NIM: 2512501269 &bull; Program Studi Sistem Informasi &bull; Universitas Budi Luhur
+                </div>
+                <div class="text-muted small mt-1" style="font-size: 11px;">
+                    Dibuat menggunakan Bootstrap 5.2.3 &bull; Memenuhi seluruh indikator tugas pemrograman web
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
